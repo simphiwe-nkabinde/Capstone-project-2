@@ -29,7 +29,7 @@ public class Driver {
 		
 		//READ driver.txt file
 		try {
-			File drivers = new File("drivers.txt");				//read file
+			File drivers = new File("driver-info.txt");				//read file
 			Scanner sc = new Scanner(drivers);
 			while (sc.hasNextLine()) {		
 				String data = sc.nextLine();	//stores string read by scanner
@@ -67,7 +67,7 @@ public class Driver {
 		
 		//OVERWRITE drivers.txt with updated content
 		try {
-			Formatter f = new Formatter("drivers.txt");
+			Formatter f = new Formatter("driver-info.txt");
 			f.format("%s", driversFile);
 			f.close();
 		}
